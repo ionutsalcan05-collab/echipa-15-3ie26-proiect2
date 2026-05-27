@@ -1,19 +1,16 @@
-# Proiect 2: Site de Prezentare Personală (JAMstack)
+# React + Vite
 
-**Echipa 15 - 3IE26**
-* Sălcan Ionuț (Lider echipă)
-* Raicici Radovan
-* Cristian Bologa
-* Szilagy Andrei
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Sarcini și Atribuții
-* **Sălcan Ionuț:** Crearea și gestionarea repository-ului GitHub, configurarea inițială Strapi Cloud, realizarea documentației și legătura cu Netlify.
-* **Raicici Radovan:** Generarea interfeței de bază (React & Tailwind) pentru paginile Home și About, implementarea structurii de componente vizuale.
-* **Cristian Bologa:** Configurarea temei și a tipografiei Web din TweakCN, implementarea meniului sticky, a meniului mobil de tip hamburger și a butonului de Dark/Light mode.
-* **Szilagy Andrei:** Modificarea locală a backend-ului Strapi pentru functionalitatea paginii de Contact, realizarea paginii suplimentare de portofoliu și asamblarea elementelor finale (logo, footer, copyright).
+Currently, two official plugins are available:
 
-## Bibliografie și Surse de Inspirație
-* Structura de bază și codul pentru interfața React/Tailwind au fost asigurate cu ajutorul asistenților AI permisi (Bolt.new / extensii VS Code).
-* Tema vizuală, paleta de culori și cele 3 fonturi de tipografie web au fost preluate de la [TweakCN](https://tweakcn.com/).
-* Documentația oficială [Strapi](https://docs.strapi.io/) pentru configurarea backend-ului Headless CMS.
-* *Notă: Modelul de design este inspirat din layout-urile moderne și minimaliste de portofolii personale, însă nu am folosit un model/template predefinit copiat.*
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
