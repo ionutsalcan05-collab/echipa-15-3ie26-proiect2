@@ -6,15 +6,34 @@ export default function Proiecte() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('https://victorious-vacation-03e7c67dc.strapiapp.com/api/proiects?populate=*')
-            .then(res => {
-                setProiecte(res.data.data || []);
+        // Simulare date Strapi
+        const loadData = async () => {
+            try {
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+                setProiecte([
+                    {
+                        id: 1,
+                        NumeProiect: "Proiectul 1 (Portofoliu)",
+                        DescriereScurta: "Un portofoliu web modern creat cu React și Tailwind.",
+                        // Pune un link fals catre o imagine pentru test, sau lasa gol daca nu ai
+                        ImagineProiect: null
+                    },
+                    {
+                        id: 2,
+                        NumeProiect: "Proiectul 2",
+                        DescriereScurta: "Aplicație web pentru gestionarea task-urilor.",
+                        ImagineProiect: null
+                    }
+                ]);
                 setLoading(false);
-            })
-            .catch(err => {
-                console.error(err);
+            } catch (err) {
+                setError("Eroare la preluarea proiectelor.");
                 setLoading(false);
-            });
+            }
+        };
+
+        loadData();
     }, []);
 
     if (loading) return <div className="text-center py-20 text-xl font-bold">Se încarcă proiectele...</div>;
