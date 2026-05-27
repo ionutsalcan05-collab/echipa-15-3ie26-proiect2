@@ -1,0 +1,11 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": { "singularName": "about", "pluralName": "abouts", "displayName": "About" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "Titlu": { "type": "string" },
+    "Descriere": { "type": "richtext" },
+    "PozaProfil": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proiects",
+  "info": { "singularName": "proiect", "pluralName": "proiects", "displayName": "Proiect" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "NumeProiect": { "type": "string" },
+    "DescriereScurta": { "type": "text" },
+    "ImagineProiect": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}
